@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+
+
+    <style>
+        bory {
+        background: #210909;
+        }
+
+        .formulario{
+            background-color: #eee;
+            padding: 20px;
+            width: 250px;
+            margin:auto;
+        }
+
+        .titulo{
+            text-align: center;
+        }
+
+        .campo{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .botao{
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color:white;
+        }
+    </style>
+
+    <style>
+        .grupo {
+            background: white;
+            padding: 25px;
+            max-width: 400px;
+            margin: 40px auto;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+
+        /* sombra leve */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+        h2 {
+             text-align: center;
+             margin-bottom: 10px;
+            }
+
+        h3 {
+            margin-top: 20px;
+             font-size: 16px;
+            }
+
+/* Labels (organização) */
+        label {
+            display: block;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="formulario">
+        <form method="GET">
+            <h2 class="titulo">Preencha com as suas informações</h2>
+            <hr>
+            <label>Nome:</label><input type="text" name="nome" class="campo"><br>
+            <label>Senha:</label><input type="password" name="senha" class="campo"><br>
+            <label>Linkdin:</label><input type="url" name="linkdin" class="campo"/><br>
+            <button class="botao">Enviar</button>
+        </form>
+    </div>
+
+
+    <div class="grupo">
+        <form method="GET" class="escolhaPedido">
+            <h2>Faça a sua escolha</h2>
+        <hr>
+
+        <h3>Escolha o sabor:</h3>
+        <label><input type="checkbox" name="opcao[]" value="4queijo"> 4 Queijo</label><br>
+        <label><input type="checkbox" name="opcao[]" value="calabresa"> Calabresa</label><br>
+        <label><input type="checkbox" name="opcao[]" value="calafrango"> Calafrango</label><br>
+        <label><input type="checkbox" name="opcao[]" value="suprema"> Suprema</label><br>
+
+        <h3>Borda com recheio?</h3>
+        <label><input type="radio" name="borda" value="sim"> Sim</label><br>
+        <label><input type="radio" name="borda" value="nao"> Não</label>
+
+        <h3>Bebidas:</h3>
+        <label><input type="radio" name="bebida" value="refrigerante"> Refrigerante</label><br>
+        <label><input type="radio" name="bebida" value="suco"> Suco</label><br>
+        <label><input type="radio" name="bebida" value="agua"> Água</label><br>
+        <label><input type="radio" name="bebida" value="nada"> Nada</label><br>
+
+        <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínicas</title>
+    <link rel="stylesheet" href="base.css">
+
+<style>
+
+    /* REMOVE ESPAÇOS PADRÕES DO NAVEGADOR */
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+    }
+
+    /* CONFIGURAÇÕES GERAIS */
+    body {
+        background-color: #f5f9fc;
+        color: #333333;
+        font-family: Arial, sans-serif;
+    }
+
+    /* ESTRUTURA PRINCIPAL */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* MENU LATERAL */
+    .menu {
+        width: 260px;
+        background-color: #4A90E2;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    /* MENU FECHADO */
+    .menu.fechado {
+
+        width: 70px;
+    }
+
+    /* ESCONDE ELEMENTOS AO FECHAR */
+    .menu.fechado ul,
+    .menu.fechado h3,
+    .menu.fechado hr {
+
+        display: none;
+    }
+
+    /* BOTÃO DO MENU */
+    .menu button {
+        background-color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    /* LISTA DO MENU */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* LINKS DO MENU */
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 12px 0;
+        transition: 0.3s;
+    }
+
+    /* EFEITO HOVER MENU */
+    .menu a:hover {
+        color: #FFD966;
+    }
+
+    /* ÁREA PRINCIPAL */
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* CABEÇALHO */
+    .header {
+        background-color: #DCEEFF;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* IMAGEM HEADER */
+    .header img {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    /* CONTEÚDO */
+    .content {
+        flex: 1;
+        background-color: white;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    /* TÍTULOS */
+    .content h1 {
+        color: #4A90E2;
+    }
+
+    /* PARÁGRAFOS */
+    .content p {
+        line-height: 1.6;
+    }
+
+    /*SOBRE PROFISSIONAIS*/
+    img{
+
+    width: 200px;
+    border-radius: 10px;
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #DCEEFF;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* LISTA FOOTER */
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    /* BOTÃO AGENDAMENTO */
+    .botao-agendamento {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 24px;
+        background-color: #FFD966;
+        color: #333333;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    /* HOVER BOTÃO */
+    .botao-agendamento:hover {
+        background-color: #f5c842;
+    }
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="menu" id="menu">
+            <button onclick="toggleMenu()">
+                ☰
+            </button>
+
+             <h3 >Todas as Informações necessárias</h3>
+             <hr>
+            <ul>
+                <li><a href="sobre-clilnica.html">Sobre a Clínica</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="principal.html">Voltar</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header -->
+                 <h1>Novo Sorriso - Odontologia</h1><img width="110" src="https://t4.ftcdn.net/jpg/04/78/35/19/360_F_478351952_zYX9Al0hSfkoma1SuMqpmO916eeXvouU.jpg">
+            </div>
+    
+            <div class="content">
+                <h1>Nossa Historia</h1>
+                <p>Nossa clínica nasceu através de muito esforço, dedicação e vontade de crescer. No começo, tudo foi construído aos poucos, conciliando estudos, trabalho e o sonho de oferecer um atendimento de qualidade para cada paciente. Foram anos de aprendizado, desafios e muito empenho para transformar dedicação em experiência profissional.</p>
+
+                <p>Com o passar do tempo, a clínica foi evoluindo graças ao compromisso com a profissão e ao cuidado verdadeiro com as pessoas. Cada conquista alcançada representa horas de estudo, trabalho duro e a busca constante por oferecer um atendimento humanizado, acolhedor e de confiança.</p>
+
+                <p>Hoje, após mais de 15 anos de atuação, seguimos mantendo os mesmos valores do início da nossa trajetória: respeito, responsabilidade e paixão pelo que fazemos.</p>
+                <hr>
+
+                <h1>Com os Melhores Profissionais na Área</h1>
+
+                <div class="dentistas">
+                    <h3>Dra. Eroneide França</h3> <img src="medica_eroneide.jpg">
+                    <p>A 18 anos na área de Ortodontia, especialidade responsável pelo alinhamento dos dentes e correção da mordida. Durante sua carreira, desenvolveu experiência no uso de aparelhos ortodônticos tradicionais e alinhadores invisíveis, sempre buscando proporcionar um sorriso mais saudável e harmonioso aos seus pacientes. Seu atendimento é reconhecido pela dedicação e atenção aos detalhes de cada tratamento.</p>
+
+                    <h3>Dr. Camila Rocha</h3>
+                    <img src="medica_fernanda.jpg">
+                    <p>Com 15 anos de experiência em Implantodontia, a Dra. Camila Rocha dedica sua carreira à realização de implantes dentários e procedimentos de reabilitação oral. Seu trabalho é voltado para devolver conforto, funcionalidade e autoestima aos pacientes, utilizando técnicas modernas e seguras para garantir resultados de alta qualidade.</p>
+
+                    <h3>Dra. Fernanda Oliveira</h3>
+                    <img src="medica.jpeg">
+                    <p>Na área de Odontopediatria, a Dra. Fernanda Oliveira atua há 12 anos acompanhando o desenvolvimento da saúde bucal infantil. Conhecida pelo atendimento acolhedor e humanizado, ela busca tornar as consultas mais leves e tranquilas para as crianças, incentivando desde cedo os cuidados corretos com a higiene bucal e a prevenção de problemas dentários.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+
+            <h3>Informações</h3>
+            <p>
+                <strong>Horário:</strong>
+                Abre às 8:00 e fecha às 18:00
+            </p>
+
+            <p>
+                <strong>Endereço:</strong>
+                2685 Av. Min. Marcos Freire Pernambuco
+            </p>
+
+            <div class="contatos">
+                <h4>Meios de Contatos:</h4>
+
+                <ul>
+                    <li>
+                        <strong>Email:</strong>
+                        medico@gmail.com
+                    </li>
+                    <li>
+                        <strong>WhatsApp:</strong>
+                        (11) 94268 2840
+                    </li>
+                </ul>
+            </div>
+
+            <a href="contato.html" class="botao-agendamento">Agende sua Avaliação</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- CÓDIGO JAVASCRIPT-->
+
+    <script>
+
+        function toggleMenu() {
+
+            document
+                .getElementById("menu")
+                .classList
+                .toggle("fechado");
+
+        }
+
+    </script>
+</body>
+</html>

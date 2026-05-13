@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínicas</title>
+    <link rel="stylesheet" href="base.css">
+
+<style>
+
+    /* REMOVE ESPAÇOS PADRÕES DO NAVEGADOR */
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+    }
+
+    /* CONFIGURAÇÕES GERAIS */
+    body {
+        background-color: #f5f9fc;
+        color: #333333;
+        font-family: Arial, sans-serif;
+    }
+
+    /* ESTRUTURA PRINCIPAL */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* MENU LATERAL */
+    .menu {
+        width: 260px;
+        background-color: #4A90E2;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    /* MENU FECHADO */
+    .menu.fechado {
+
+        width: 70px;
+    }
+
+    /* ESCONDE ELEMENTOS AO FECHAR */
+    .menu.fechado ul,
+    .menu.fechado h3,
+    .menu.fechado hr {
+
+        display: none;
+    }
+
+    /* BOTÃO DO MENU */
+    .menu button {
+        background-color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    /* LISTA DO MENU */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* LINKS DO MENU */
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 12px 0;
+        transition: 0.3s;
+    }
+
+    /* EFEITO HOVER MENU */
+    .menu a:hover {
+        color: #FFD966;
+    }
+
+    /* ÁREA PRINCIPAL */
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* CABEÇALHO */
+    .header {
+        background-color: #DCEEFF;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* IMAGEM HEADER */
+    .header img {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    /*FORMULARIO DE CADASTRO*/
+    .content {
+        justify-content: center;
+    }
+    
+    .formulario {
+        width: 400px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radio-group label{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-bottom: 10px;
+}
+
+    .botao-enviar {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 24px;
+        background-color: #ffe79e;
+        color: #333333;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #DCEEFF;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* LISTA FOOTER */
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    /* HOVER BOTÃO */
+    .botao-agendamento:hover {
+        background-color: #f5c842;
+    }
+
+</style>
+
+<style>
+    .formulario {
+        margin-bottom:auto;
+        padding: 20px;
+        width: 300;
+    }
+
+    .endereco {
+    width: fit-content;
+    margin-left: 0;
+}
+
+    .endereco iframe {
+        border: 2px solid #ffd54f;
+        border-radius: 8px;
+        display: block;
+    }
+
+</style>
+    
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="menu" id="menu">
+            <!-- Aqui vai o seu menu -->
+
+            <button onclick="toggleMenu()">
+                ☰
+            </button>
+
+             <h3 >Todas as Informações necessárias</h3>
+             <hr>
+            <ul>
+                <li><a href="#">Sobre a Clínica</a></li>
+                <li><a href="#">Profissionais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="principal.html">Voltar</a></li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                
+                <!-- Aqui vai o seu header -->
+                 <h1>Formulario de Cadastro</h1><img width="110" src="https://t4.ftcdn.net/jpg/04/78/35/19/360_F_478351952_zYX9Al0hSfkoma1SuMqpmO916eeXvouU.jpg">
+            </div>
+            <form>
+                <div class="content">
+                    <div class="formulario">
+                    <h1>Preencha o formulario</h1>
+
+                    <label for="nome">Nome:</label><input type="text" name="nome"/><br>
+                    <label for="idade">Idade:</label><input type="number" name="idade"/><br>
+
+                    <div class="radio-group">
+                        Possui convênio médico:
+                        <label>
+                            <input type="radio" name="tem-convenio">
+                            Sim
+                        </label>
+
+                        <label>
+                            <input type="radio" name="tem-convenio">
+                            Não
+                        </label>
+
+                    </div>
+                    
+                    <label for="numero">Informe o seu numero com DDD</label><input type="number" name="numero"/><br>
+                    <label for="email">Digite o seu e-mail</label><input checked="@" type="email" name="email" /><br>
+
+                    <button class="botao-enviar" type="submit">Enviar</button>
+                    <hr>
+
+                    </div>
+                    <h1>Nosso Endereço</h1>
+                    <hr>
+                    <div class="endereco">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1038730616733!2d-34.8383182!3d-7.988208699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d3fc801a04b%3A0x72afd6220d0bb656!2sAv.%20Min.%20Marcos%20Freire%2C%202685%20-%20Casa%20Caiada%2C%20Olinda%20-%20PE%2C%2053130-540!5e0!3m2!1spt-BR!2sbr!4v1778697463752!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </form>
+
+            <div class="footer">
+
+            <h3>Informações</h3>
+            <p>
+                <strong>Horário:</strong>
+                Abre às 8:00 e fecha às 18:00
+            </p>
+
+            <p>
+                <strong>Endereço:</strong>
+                2685 Av. Min. Marcos Freire Pernambuco
+            </p>
+
+            <div class="contatos">
+                <h4>Meios de Contatos:</h4>
+
+                <ul>
+                    <li>
+                        <strong>Email:</strong>
+                        medico@gmail.com
+                    </li>
+                    <li>
+                        <strong>WhatsApp:</strong>
+                        (11) 94268 2840
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <!-- CÓDIGO JAVASCRIPT  -->
+
+    <script>
+
+        function toggleMenu() {
+
+            document
+                .getElementById("menu")
+                .classList
+                .toggle("fechado");
+        }
+
+    </script>
+</body>
+</html>
