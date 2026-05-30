@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Corretamente as Tags</title>
+
+    <style>
+        .grecia{
+            font-style: italic;
+        }
+
+        section{
+            margin: 20px;
+            padding: 50px;;
+        }
+
+        div {
+            background-color: lightsalmon;
+            padding: 20px;
+            border-left: 5px solid #ff9148;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .introducao{
+            background-color: #f1f1f1;
+        }
+
+        details p {
+            background-color: lightcyan;
+            padding: 20px;
+            border-left: 5px solid #4ac6e2;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        details{
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <header>
+        <h1>Palavras que usamos no nosso dia a dia que se tem origem na <span class="grecia">Grecia</span> antiga</h1>
+
+        <aside>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#uso-dia">Por que usamos palavras de origem grega ?</a></li>
+                <li><a href="#palavras">Palvras que usamos e sua versão orignial</a></li>
+                <li><a href="#influenciavel">Áreas influenciadas pela Grécia</a></li>
+            </ul>
+        </aside>
+        <hr>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <h2 id="uso-dia">Ja parou para pensar nisso ?</h2>
+            <p>Muitas palavras usadas atualmente têm origem no grego antigo devido à grande influência que a Grécia exerceu no desenvolvimento do conhecimento humano, principalmente nas áreas da filosofia, ciência, matemática, medicina e política. Com a expansão desses conhecimentos ao longo da história, diversos termos gregos foram incorporados a outras línguas, incluindo o português. Por isso, mesmo após milhares de anos, a língua grega ainda está presente no vocabulário utilizado no cotidiano e em diferentes áreas do conhecimento.</p>
+        </section>   
+        
+        <div>
+            Compre já Pc gamer tal tal, no valor de R$751526351052,99. Acesse o site no link abaixo
+            <a href="https://i.ytimg.com/vi/jzmz6K8K4L0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDoCWUgDyjCDQPdTPcz2RArcTsLBw">Clique aqui !!!!</a>
+        </div>
+
+        <section>
+            <h4 id="palavras">Alguns Exemplos:</h4>
+
+            <ul><li>Democracia — <i>dēmokratía (<strong>δημοκρατία</strong>)</i></li></ul>
+            <ul><li>Fotografia — <i>phōs + graphía (<strong>φῶς + γραφία</strong>)</i></li></ul>
+            <ul><li>Psicologia — <i>psychḗ + logía (<strong>ψυχή + λογία</strong>)</i></li></ul>
+            <ul><li>Cronômetro — <i>chrónos + métron (<strong>χρόνος + μέτρον</strong>)</i></li></ul>
+            <ul><li>Criptografia — <i>kryptós + graphía (κρυπτός + γραφία)</i></li></ul>
+
+            <p id="influenciavel">A Grécia Antiga mudou o mundo e a gente nem percebe isso no nosso dia a dia. Olha só como as ideias deles aparecem na nossa rotina:</p>
+
+            <details>
+                <summary>🏛️ Política e Cidadania</summary>
+                <p>Quando você vota ou discute política com os amigos, está usando uma invenção deles. Os gregos criaram a democracia, que é a ideia de que o povo deve escolher o que acontece no país.</p>
+            </details>
+
+            <details>
+                <summary>🧠 Filosofia e Pensamento</summary>
+                <p>Sabe quando você para para questionar a vida, tenta ser uma pessoa justa ou debate o que é certo e errado? Isso é pura filosofia grega. Eles foram os primeiros a trocar as explicações mágicas pela lógica e pela razão.</p>
+            </details>
+            
+            <details>
+                <summary>📐 Matemática e Ciências</summary>
+                <p>Se você sofreu com fórmulas e triângulos na escola, a culpa é deles. Os gregos adoravam geometria e criaram regras matemáticas que os engenheiros usam até hoje para construir casas e prédios seguros.</p>
+            </details>
+            
+            <details>
+                <summary>🎨 Teatro e Cinema</summary>
+                <p>Os filmes, novelas e séries que você assiste hoje seguem as estruturas criadas no teatro grego. Eles dividiram as histórias entre comédia (para rir) e tragédia (para chorar e se emocionar).</p>
+            </details>
+            
+            <details>
+                <summary>🏛️ Arquitetura</summary>
+                <p>Basta olhar para o prédio de um tribunal, de uma faculdade ou de um banco famoso. Se tiver aquelas colunas imponentes na frente, a inspiração veio direto dos templos gregos.</p>
+            </details>
+            
+            <details>
+                <summary>🏅 Esportes</summary>
+                <p>De quatro em quatro anos, o mundo para para assistir aos Jogos Olímpicos. Esse evento gigantesco começou lá atrás, na Grécia, como uma forma de celebrar os atletas e parar as guerras.</p>
+            </details>
+            
+            <details>
+                <summary>⚡ Cultura e Linguagem</summary>
+                <p>Expressões como "calcanhar de Aquiles" ou "presente de grego" vêm dos mitos deles. Até hoje, heróis de quadrinhos e filmes de Hollywood se inspiram nas histórias dos deuses e guerreiros daquela época.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="formulario">
+        <form action="" method="get">
+            <fieldset>
+                <legend>Preencha os Campos:</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome-completo"><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" min="10" max="100" id="idade" name="idade"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" contenst><br>
+
+                <p>
+                    <label for="descricao">Coloque o que achou do conteudo</label>
+                </p>
+                <textarea name="descricao" id="descricao" rows="10" cols="250"></textarea>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+       </form>
+    </section>
+    
+    </footer>
+</body>
+</html>

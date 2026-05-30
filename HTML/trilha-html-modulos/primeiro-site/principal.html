@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínicas</title>
+    <link rel="stylesheet" href="base.css">
+
+<style>
+
+    /* REMOVE ESPAÇOS PADRÕES DO NAVEGADOR */
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+    }
+
+    /* CONFIGURAÇÕES GERAIS */
+    body {
+        background-color: #f5f9fc;
+        color: #333333;
+        font-family: Arial, sans-serif;
+    }
+
+    /* ESTRUTURA PRINCIPAL */
+    .wrapper {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* MENU LATERAL */
+    .menu {
+        width: 260px;
+        background-color: #4A90E2;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    /* MENU FECHADO */
+    .menu.fechado {
+
+        width: 70px;
+    }
+
+    /* ESCONDE ELEMENTOS AO FECHAR */
+    .menu.fechado ul,
+    .menu.fechado h3,
+    .menu.fechado hr {
+
+        display: none;
+    }
+
+    /* BOTÃO DO MENU */
+    .menu button {
+        background-color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    /* LISTA DO MENU */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* LINKS DO MENU */
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 12px 0;
+        transition: 0.3s;
+    }
+
+    /* EFEITO HOVER MENU */
+    .menu a:hover {
+        color: #FFD966;
+    }
+
+    /* ÁREA PRINCIPAL */
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* CABEÇALHO */
+    .header {
+        background-color: #DCEEFF;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* IMAGEM HEADER */
+    .header img {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    /* CONTEÚDO */
+    .content {
+        flex: 1;
+        background-color: white;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    /* TÍTULOS */
+    .content h1 {
+        color: #4A90E2;
+    }
+
+    /* PARÁGRAFOS */
+    .content p {
+        line-height: 1.6;
+    }
+
+    /* ÁREA DE AVALIAÇÕES */
+    .avaliacoes {
+        margin-top: 40px;
+    }
+
+    /* BLOCO DAS AVALIAÇÕES */
+    .avaliacoes blockquote {
+        background-color: #f5f9fc;
+        padding: 20px;
+        border-left: 5px solid #4A90E2;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #DCEEFF;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* LISTA FOOTER */
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    /* BOTÃO AGENDAMENTO */
+    .botao-agendamento {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 24px;
+        background-color: #FFD966;
+        color: #333333;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    /* HOVER BOTÃO */
+    .botao-agendamento:hover {
+        background-color: #f5c842;
+    }
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="menu" id="menu">
+            <button onclick="toggleMenu()">
+                ☰
+            </button>
+
+             <h3 >Todas as Informações necessárias</h3>
+             <hr>
+            <ul>
+                <li><a href="sobre-clilnica.html">Sobre a Clínica</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header -->
+                 <h1>Novo Sorriso - Odontologia</h1><img width="110" src="https://t4.ftcdn.net/jpg/04/78/35/19/360_F_478351952_zYX9Al0hSfkoma1SuMqpmO916eeXvouU.jpg">
+            </div>
+    
+            <div class="content">
+                <h1>Nossa Historia</h1>
+                <p>Há mais de 15 anos, nossa clínica se dedica a oferecer um atendimento de excelência, sempre unindo experiência, compromisso e cuidado individualizado com cada paciente. Desde o início da nossa trajetória, buscamos criar um ambiente acolhedor, seguro e humanizado, onde cada pessoa seja atendida com atenção, respeito e profissionalismo.</p>
+
+                <p>Contamos com uma equipe de profissionais altamente qualificados, constantemente atualizados com as mais modernas técnicas e avanços da área da saúde, garantindo tratamentos eficazes, seguros e personalizados para cada necessidade. Nosso compromisso vai além da realização de procedimentos, trabalhamos para proporcionar bem estar, confiança e qualidade de vida em cada atendimento realizado.</p>
+
+                <p>Ao longo desses anos, construímos uma história sólida baseada na confiança de nossos pacientes, na transparência de nossos serviços e na busca contínua pela excelência. Cada conquista alcançada reflete a dedicação da nossa equipe e a satisfação de quem escolhe nossa clínica para cuidar da própria saúde e bem estar.</p>
+
+                <p>Mais do que oferecer tratamentos, buscamos criar relações duradouras, pautadas pela ética, pela empatia e pelo cuidado genuíno com cada pessoa que passa por nossa clínica.</p>
+                <hr>
+                <h1>Sempre com as Melhores avaliações</h1>
+
+                <div class="avaliacoes">
+                    <h3>Comentarios</h3>
+                    <p>— Julia</p>
+                    <blockquote>
+                    "Fui muito bem atendida desde a primeira consulta. A equipe é extremamente atenciosa e o ambiente transmite muita confiança e conforto."
+                    </blockquote>
+
+                    <p>— Caroline</p>
+                    <blockquote>
+                    "Excelente experiência. Os profissionais demonstram muito cuidado e dedicação em cada detalhe do atendimento."
+                    </blockquote>
+
+                    <p>— Kaio</p>
+                    <blockquote>
+                    "Clínica organizada, atendimento de qualidade e profissionais muito preparados. Recomendo pela seriedade e pelo ótimo atendimento."
+                    </blockquote>
+                    <p>Todos os clientes são atendidos da melhor forma possível e com respeito, tentando atender às suas necessidades. Não é à toa que todos nos deram 5 estrelas.</p>
+                    <p>Pode conferir esses mensagem e varias outras no <a style="color: green;" target="_blank" href="https://www.doctoralia.com.br/pesquisa?q=Dentista&loc=S%C3%A3o%20Paulo&filters%5Bspecializations%5D%5B%5D=64">Doctoralia</a>.</p>
+
+                </div>
+            </div>
+
+            <div class="footer">
+
+            <h3>Informações</h3>
+            <p>
+                <strong>Horário:</strong>
+                Abre às 8:00 e fecha às 18:00
+            </p>
+
+            <p>
+                <strong>Endereço:</strong>
+                2685 Av. Min. Marcos Freire Pernambuco
+            </p>
+
+            <div class="contatos">
+                <h4>Meios de Contatos:</h4>
+
+                <ul>
+                    <li>
+                        <strong>Email:</strong>
+                        medico@gmail.com
+                    </li>
+                    <li>
+                        <strong>WhatsApp:</strong>
+                        (11) 94268 2840
+                    </li>
+                </ul>
+            </div>
+
+            <a href="contato.html" class="botao-agendamento">Agende sua Avaliação</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- CÓDIGO JAVASCRIPT-->
+
+    <script>
+
+        function toggleMenu() {
+
+            document
+                .getElementById("menu")
+                .classList
+                .toggle("fechado");
+
+        }
+
+    </script>
+</body>
+</html>
